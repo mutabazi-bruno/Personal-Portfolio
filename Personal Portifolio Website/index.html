@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f017b8df0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Assets/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Bruno</span><br> Mutabazi From Rwanda</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------about part --------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Assets/check about.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a 21-year-old software engineering student at the African Leadership University,
+                         with a deep interest in technology and creativity. From high school, 
+                         I’ve been involved in software development
+                          and have built expertise in multiple areas including web design,
+                           graphic design, and multimedia production. 
+                           I love taking on new challenges and finding innovative solutions. <br><br>
+                            My work is driven by a passion for both technology and creativity.
+                            I believe in continuous learning and strive to improve my skills with every project.
+                             My diverse experience allows me to approach problems from multiple perspectives, whether it's coding,
+                            designing, or creating immersive media.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>3D Animator</span><br>3D animations Creator</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Working As A Freelance In anything related to computer</li>
+                            <li><span>2023-2024</span><br>Working For Gevid company as Database Administrator</li>
+                            <li><span>2024-2025</span><br>Making ANONY Studio Short 3D animations</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School Diploma</span><br>Glory Academy</li>
+                            <li><span>Currently In University</span><br>African Leadership University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------Service part ------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I prioritize the user experience in every design,
+                         focusing on creating intuitive and easy-to-navigate interfaces.
+                          I ensure that your users have a seamless journey, making interactions
+                           simple and efficient."</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in designing websites that are fully responsive,
+                         ensuring they look great on all devices, from desktops to
+                          smartphones. Whether you need a personal blog or a business
+                           website, I create functional and attractive designs that
+                            provide an excellent user experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>3D Video Animation</h2>
+                    <p>I design and animate custom 3D models that bring your ideas to life.
+                         Whether it's for a product demo, advertising, or a creative project,
+                          I provide high-quality animation that grabs attention.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!----------portifolio------------------------>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Assets/work1.png" >
+                <div class="layer">
+                    <h3>Small Online Trading Shop</h3>
+                    <p>I designed and developed a fully functional website for a small online trading shop. 
+                        The website features a clean, modern layout and an intuitive user interface,
+                         making it easy for customers to browse products and make purchases.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Assets/work2.png" >
+                <div class="layer">
+                    <h3>Dashboard UI</h3>
+                    <p>Designed a sleek and intuitive user dashboard for a business analytics platform.
+                         Focused on creating clear visual hierarchies and easy-to-read data visualization 
+                         to provide users with actionable insights.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Assets/work3.png" >
+                <div class="layer">
+                    <h3>3D Video Animations</h3>
+                    <p>Created a 3D animated product demo video to showcase a new tech product.
+                         The animation effectively communicated the product’s features and functionality,
+                         allowing potential customers to visualize its use in a realistic way.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+   </div>
+
+   <!--------------content-------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>b.mutabazi@alustudent.com</p>
+                <p><i class="fa-solid fa-phone"></i>+250 791825140</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./Assets/Mutabazi cv.pdf" download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form >
+                   <input type="text" name="Name" placeholder="Your Name" required>
+                   <input type="email" name="Email" placeholder="Your Email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn btn2">Submits</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Mutabazi Bruno.2025 <i class="fa-solid fa-hand-peace"></i></p>
+    </div>
+   </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
